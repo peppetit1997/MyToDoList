@@ -29,3 +29,19 @@ addTaskButton.addEventListener("click", () => {
       });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const checkboxes = document.querySelectorAll(".task-checkbox");
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", function () {
+      const label = this.nextElementSibling;
+
+      if (this.checked) {
+        label.classList.add("completed");
+      } else {
+        label.classList.remove("completed");
+      }
+    });
+  });
+});
