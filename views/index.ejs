@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My to do list</title>
+    <title>Dynamic Header Change with EJS</title>
   </head>
   <body>
-    <h1>Here are your task to do today.</h1>
+    <h1><%= header %></h1>
+    <button id="changeButton">Change Header</button>
+    <script src="/script.js"></script>
+    <!-- Include the external JavaScript file -->
   </body>
 </html>
